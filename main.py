@@ -3,6 +3,7 @@ import threading
 import argparse
 import time
 
+# Def all avilable ports
 ALL_PORTS = [1, 65536]
 
 def scan_port(ip, port):
