@@ -82,8 +82,7 @@ def main():
     parser = argparse.ArgumentParser(description="Port Ripper - Lightweight fast port scanner.")
     parser.add_argument("target", help="Target IP address or host name")
     parser.add_argument("-p", "--port", type=int, default=0, help="Scan a specific port")
-    parser.add_argument("-r", "--range", nargs=2, type=int, metavar=("start", "end"),
-                        default=[1, 1024], help="Scan a range of ports (default: 0-1024)")
+    parser.add_argument("-r", "--range", nargs=2, type=int, metavar=("start", "end"), help="Scan a range of ports (default: 0-1024)")
     parser.add_argument("-a", "--all", action="store_true", help="Scan all ports (1-65535)")
 
     args = parser.parse_args()
